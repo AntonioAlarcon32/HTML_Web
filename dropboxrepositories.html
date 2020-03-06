@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GitHub Repos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+      $("#tablerepos").hide();})
+    </script>
+
+    <script>
+      $(document).ready(function(){
+      $("#senddata").click(function(){
+      $("#tablerepos").show();
+      });
+      });
+    </script>
+    
+  </head>
+
+  <body>
+
+    <h1>GitHub Repositories</h1>
+    <hr>
+    <p>Enter the name of the user</p>
+
+    <input type="text" placeholder="Username" id="user" /> 
+    </input>
+
+    <button id="senddata"> 
+      Show Repositories
+    </button>
+
+    <hr>
+
+    <table class= "table table-striped" style="width:90%" id="tablerepos">
+      <tr>
+
+      <th>Repo Name</th>
+      <th>Description</th>
+      <th>Followers</th>
+      </tr>
+      
+    </table>
+
+  </body>
+
+</html>
